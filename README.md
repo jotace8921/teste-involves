@@ -112,3 +112,9 @@ A prioridade maior para a indexação das tabelas deve ser dada às colunas util
   - CICLO;
   - ID_BLOCO_ITEM
   - SEMANA_LP.
+
+## 6) Considere a instrução Python a seguir: `x = [ print(i) for i in range(10) if i % 2 == 0 ]` Após a execução dessa instrução no Python , a variável “x” conterá qual valor.
+
+**Resposta**:
+
+A variável `x` conterá uma lista de tamanho 5, contendo `None` em todos os seus campos. Isso acontece porque a função print exibe o valor mas retorna None e porque o list comprehension utilizado só realiza o print quando `i%2==0`, i.e., quando `i` é um número par.
