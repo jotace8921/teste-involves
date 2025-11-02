@@ -118,3 +118,15 @@ A prioridade maior para a indexação das tabelas deve ser dada às colunas util
 **Resposta**:
 
 A variável `x` conterá uma lista de tamanho 5, contendo `None` em todos os seus campos. Isso acontece porque a função print exibe o valor mas retorna None e porque o list comprehension utilizado só realiza o print quando `i%2==0`, i.e., quando `i` é um número par.
+
+## 7) Faça um script em Python que peça dois números e imprima a soma.
+
+**Resposta**:
+
+```python
+
+x = int(input("Digite o primeiro número: "))
+y = int(input("Digite o segundo número: "))
+
+print(f"A soma dos números é: {x+y}")
+```
