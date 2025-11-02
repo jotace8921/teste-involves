@@ -40,7 +40,17 @@ ORDER BY NOME_PDV -- Ordena por NOME_PDV
 ## 3) Considerando a tabela de origem da questão anterior, crie uma query que some o valor de sell in de acordo com cada ponto de venda e agrupe os resultados por mês (campo MES) e ano (campo ANO). Ordene os registros por um período cronológico de forma crescente e por nome do ponto de venda.
 
 ```SQL
-SELECT ANO, MES, NOME_PDV, SUM(SELLIN) FROM PONTO_VENDA_UNIDADE -- Seleciona as colunas desejadas
-GROUP BY ANO, MES, NOME_PDV -- Agrupa por ano, mês e nome
-ORDER BY ANO ASC, MES ASC, NOME_PDV ASC -- Orderna por ano, mês e nome
+SELECT ANO, MES, NOME_PDV, SUM(SELLIN) FROM PONTO_VENDA_UNIDADE -- Seleciona ANO, MES, NOME_PDV e a agregação em sOma de SELLIN
+GROUP BY ANO, MES, NOME_PDV -- Agrupa por ANO, MES e NOME_PDV
+ORDER BY ANO ASC, MES ASC, NOME_PDV ASC -- Orderna por ANO, MES e NOME_PDV
+```
+
+## 4) Considerando a tabela de origem da questão 2 e uma segunda tabela VISITAS_PONTO_VENDA, crie uma query que calcule a quantidade de visitas do ponto de venda de nome INVOLVES, sabendo-se que a tabela de visitas possui um campo que identifica se o ponto de venda foi visitado ou não chamado FL_VISITADO (Se 1 = Ponto de venda visitado / Se 0 = Ponto de venda não visitado). O campo chave que liga as duas tabelas é ID_PDV (na tabela PONTO_VENDA_UNIDADE) e FK_PDV(na tabela VISITAS_PONTO_VENDA). A query deve mostrar apenas as informações de nome do ponto de venda e quantidade de visitas realizadas.
+
+```SQL
+SELECT pvu.NOME_PDV, SUM(vpv.FL_VISITADO) FROM PONTO_VENDA_UNIDADE pvu -- Seleciona o NOME_PDV e a agragação da soma de PONTO_VENDA_UNIDADE
+INNER JOIN VISITAS_PONTO_VENDA vpv -- Inner join entre as tabelas
+ON pvu.ID_PFV = vpv.FK_PDV -- Relaciona as chaves ID_PFV E FK_PDV
+WHERE pvu.NOME_PDV = 'INVOLVES' -- Filtra dados para manter quando o NOME_PDV for INVOLVES
+GROUP BY pvu.NOME_PDV -- Agrupa por NOME_PDV
 ```
