@@ -25,3 +25,15 @@ As principais atribuições de um Engenheiro de Dados são:
 - Desenvolvimento e manutenção de pipelines de dados responsáveis pela transferência e transformação dos dados;
 - Assegurar a qualidade e a governança dos dados disponibilizados na camada analítica.
 
+### e) O que é Trade Marketing?
+
+É uma área de aplicação do Marketing voltada para a relação das indústrias com os seus canais de distribuição (atacadistas e varejistas). O enfoque dessa área consiste em atuar em parceria com os pontos de venda para maximizar os volumes de vendas e garantir a exposição desejada dos produtos. Orientando-se por dados, o trading marketing pode analisar o desempenho obtido e obter insights para a aplicação de novas estratégias.
+
+## 2) Crie uma query, considerando o SGBD MySQL, para exibir todos os dados de uma tabela de Pontos de Venda (tabela origem PONTO_VENDA_UNIDADE) e restringir apenas os pontos de venda que possuem sell in maior que 20.000 (campo SELLIN) e ainda ordená-los por nome do ponto de venda (campo NOME_PDV).
+
+```SQL
+SELECT * FROM PONTO_VENDA_UNIDADE -- Seleciona todas as colunas
+WHERE SELLIN > 20000 -- Filtra pelos valores de SELLIN 
+ORDER BY NOME_PDV -- Ordena por NOME_PDV
+```
+
