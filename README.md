@@ -37,3 +37,10 @@ WHERE SELLIN > 20000 -- Filtra pelos valores de SELLIN
 ORDER BY NOME_PDV -- Ordena por NOME_PDV
 ```
 
+## 3) Considerando a tabela de origem da questão anterior, crie uma query que some o valor de sell in de acordo com cada ponto de venda e agrupe os resultados por mês (campo MES) e ano (campo ANO). Ordene os registros por um período cronológico de forma crescente e por nome do ponto de venda.
+
+```SQL
+SELECT ANO, MES, NOME_PDV, SUM(SELLIN) FROM PONTO_VENDA_UNIDADE -- Seleciona as colunas desejadas
+GROUP BY ANO, MES, NOME_PDV -- Agrupa por ano, mês e nome
+ORDER BY ANO ASC, MES ASC, NOME_PDV ASC -- Orderna por ano, mês e nome
+```
