@@ -17,3 +17,11 @@ ETL é o nome dado ao processo utilizado para trabalhar com dados de diversas fo
 1. extraídos de suas respectivas fontes;
 2. transformados por meio de processos de limpeza, padronização, filtragem, aplicação de regras de negócio e validação;
 3. carregados em seu destino definido.
+
+### d) Quais são as principais atribuições de um Engenheiro de Dados?
+
+As principais atribuições de um Engenheiro de Dados são:
+- Construção e manutenção dos ambientes de dados;
+- Desenvolvimento e manutenção de pipelines de dados responsáveis pela transferência e transformação dos dados;
+- Assegurar a qualidade e a governança dos dados disponibilizados na camada analítica.
+
