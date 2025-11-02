@@ -130,3 +130,12 @@ y = int(input("Digite o segundo número: "))
 
 print(f"A soma dos números é: {x+y}")
 ```
+
+---
+
+## Para responder às questões 8, 9 e 10 utilize a ferramenta Pentaho Data Integration (PDI) na versão de sua preferência. A ETL final deve conter um job principal que, por sua vez, deve conter as transformações criadas nas questões 8, 9, 10. Além disso, que tal ganhar um ponto a mais nessas questões ? Para isso, inclua o projeto criado em um repositório do Github (é importante que seja público para termos visibilidade, ok ?). Compartilhe por aqui o link para o repositório.
+
+### Observação importante: Uma vez que não tenho experiência com a ferramenta Pentaho Data Integration (PDI), como mencionado na entrevista inicial, vou esboçar a minha ideia de como construir os jobs das questões 8, 9  e 10.
+
+--- 
+
