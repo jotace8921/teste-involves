@@ -135,7 +135,9 @@ print(f"A soma dos números é: {x+y}")
 
 ## Para responder às questões 8, 9 e 10 utilize a ferramenta Pentaho Data Integration (PDI) na versão de sua preferência. A ETL final deve conter um job principal que, por sua vez, deve conter as transformações criadas nas questões 8, 9, 10. Além disso, que tal ganhar um ponto a mais nessas questões ? Para isso, inclua o projeto criado em um repositório do Github (é importante que seja público para termos visibilidade, ok ?). Compartilhe por aqui o link para o repositório.
 
-### Observação importante: Como mencionado na primeira conversa, não twenho muita prática com o Pentaho. Fiz o processo com base no meu entendimento de pipelines ETL, porém com uma visão mais limitada e intuitiva da plataforma. Além disso, como uso Linux em minha máquina pessoal, houveram alguns erros na interface do Pentaho para alguns blocos específicos (ex.: group by) que me fizeram contornar com outra alternativa.
+### Observação importante: Como mencionado na primeira conversa, não twenho muita prática com o Pentaho. Fiz o processo com base no meu entendimento de pipelines ETL, porém com uma visão mais limitada e intuitiva da plataforma. Além disso, como uso Linux em minha máquina pessoal, houveram alguns erros na interface do Pentaho para alguns blocos específicos (ex.: group by) que me fizeram contornar com outra alternativa. Também precisei salvar os dados em um .csv, ao invés de gravar em um banco.
+
+### As soluções se encontram disponíveis em: [https://github.com/jotace8921/teste-involves](https://github.com/jotace8921/teste-involves)
 
 --- 
 
@@ -146,6 +148,8 @@ print(f"A soma dos números é: {x+y}")
 ### b) Dimensão Ponto de Venda (DIM_PDV): Deve conter o id, nome e perfil do ponto de venda;
 
 ### c) Dimensão Linha de Produto (DIM_LINHA_PRODUTO): Deve conter o id, nome e perfil da linha de produto.
+
+**Resposta**: Solução em https://github.com/jotace8921/teste-involves
 
 ## 9) Construa uma transformação que deve usar como datasource o dataset (DATASET_TESTE_DE.csv) que contém informações de coletas de dados nos ponto de vendas. A transformação deve consultar o dataset e inserir, em uma base de dados (modelo dimensional), as informações coletadas, conforme as tabelas abaixo:
 
